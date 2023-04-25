@@ -1,3 +1,3 @@
 jobs:
   call-workflows-in-another-repo:
-    uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml
+    uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@v1
