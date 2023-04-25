@@ -3,7 +3,7 @@ on:
 jobs:
   call-workflows-in-another-repo:
     uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
-    # with:
-    #   config-path: .github/labeler.yml
-    # secrets:
-    #   envPAT: ${{ secrets.envPAT }}
+    with:
+      config-path: .github/labeler.yml
+    secrets: inherit
+
