@@ -5,10 +5,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Call reusable workflow
-        uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
-        with:
-          config-path: .github/labeler.yml
-        secrets:
-          token: ${{ secrets.GITHUB_TOKEN}}
-
-
+        uses: actions/checkout@v3
+      - run: ls
