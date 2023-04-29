@@ -4,7 +4,8 @@ jobs:
   call-workflows-in-another-repo:
     runs-on: self-hosted
     steps:
-      - uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
+      - name: Call reusable workflow
+        uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
         with:
           config-path: .github/labeler.yml
         secrets:
