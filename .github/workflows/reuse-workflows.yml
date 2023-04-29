@@ -3,10 +3,11 @@ on:
 jobs:
   call-workflows-in-another-repo:
     runs-on: self-hosted
-    uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
-    with:
-      config-path: .github/labeler.yml
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN}}
+    steps:
+      - uses: pvmtriet232/github-action/.github/workflows/reusing-workflows.yml@main
+        with:
+          config-path: .github/labeler.yml
+        secrets:
+          token: ${{ secrets.GITHUB_TOKEN}}
 
 
