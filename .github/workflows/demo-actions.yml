@@ -4,7 +4,7 @@ jobs:
     call-simple-slack-notify-from-pvmtriet232-repo:
         runs-on: ubuntu-latest
         steps: 
-            - uses: pvmtriet232/simple-slack-notify@b204bd72c057a336fc9d18c37740602f77eace98
+            - uses: pvmtriet232/simple-slack-notify@v1
               env:
                 SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
               with:
