@@ -1,0 +1,5 @@
+on: 
+  workflow_dispatch:
+jobs:
+  call-reusable-workflows-test:
+  uses: pvmtriet232/github-action/.github/workflows/reusable-workflows.yaml@main
